@@ -169,14 +169,21 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="CadastraEvento.aspx" />
+    <Content Include="CadastraProducao.aspx" />
+    <Content Include="CadastraReserva.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\145.png" />
+    <Content Include="Content\img\148.png" />
+    <Content Include="Content\img\150.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FilmesemCartaz.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -189,6 +196,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Histórico.aspx" />
+    <Content Include="PaineldeIngressos.aspx" />
+    <Content Include="PaineldeVendas.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -218,6 +228,9 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TipodeIngresso.aspx" />
+    <Content Include="TipodePagamento.aspx" />
+    <Content Include="VenderIngressos.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -325,6 +338,27 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CadastraEvento.aspx.cs">
+      <DependentUpon>CadastraEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastraEvento.aspx.designer.cs">
+      <DependentUpon>CadastraEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastraProducao.aspx.cs">
+      <DependentUpon>CadastraProducao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastraProducao.aspx.designer.cs">
+      <DependentUpon>CadastraProducao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastraReserva.aspx.cs">
+      <DependentUpon>CadastraReserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastraReserva.aspx.designer.cs">
+      <DependentUpon>CadastraReserva.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -339,10 +373,38 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FilmesemCartaz.aspx.cs">
+      <DependentUpon>FilmesemCartaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FilmesemCartaz.aspx.designer.cs">
+      <DependentUpon>FilmesemCartaz.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Histórico.aspx.cs">
+      <DependentUpon>Histórico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Histórico.aspx.designer.cs">
+      <DependentUpon>Histórico.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="PaineldeIngressos.aspx.cs">
+      <DependentUpon>PaineldeIngressos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaineldeIngressos.aspx.designer.cs">
+      <DependentUpon>PaineldeIngressos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaineldeVendas.aspx.cs">
+      <DependentUpon>PaineldeVendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaineldeVendas.aspx.designer.cs">
+      <DependentUpon>PaineldeVendas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -358,6 +420,27 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="TipodeIngresso.aspx.cs">
+      <DependentUpon>TipodeIngresso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TipodeIngresso.aspx.designer.cs">
+      <DependentUpon>TipodeIngresso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TipodePagamento.aspx.cs">
+      <DependentUpon>TipodePagamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TipodePagamento.aspx.designer.cs">
+      <DependentUpon>TipodePagamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VenderIngressos.aspx.cs">
+      <DependentUpon>VenderIngressos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VenderIngressos.aspx.designer.cs">
+      <DependentUpon>VenderIngressos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
