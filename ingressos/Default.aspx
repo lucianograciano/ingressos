@@ -7,7 +7,7 @@
         <p class="lead">
             Sistema para Venda de Ingressos.
         </p>
-        <p>Unipaulista - Desenvolvimento para Web - Prof Roberto Piagem</p>
+        <p>Unipaulistana - Desenvolvimento para Web - Prof Roberto Piagem</p>
     </div>
 
     <div class="row">
